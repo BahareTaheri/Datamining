@@ -1,0 +1,7 @@
+import collections
+import statistics
+
+data=[200, 450, 300, 1500, 700, 44]
+
+Median = statistics.median(data)
+print(Median)
