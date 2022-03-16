@@ -17,19 +17,31 @@ mode_cal =  mode(data_age)
 max_number = max(data_age)
 min_number = min(data_age)
 midRange = (max_number + min_number)/2
+
+#Q1 & Q3
 first_quartile = np.quantile(data_age, 0.25)
 upper_quartile = np.quantile(data_age, 0.75)
 
 
-
+print("--------answer of a to d------------")
 print("(a) Mean is: ", mean_calcuate)
 print("(a) Median is: ", median_cal)
 print("(b) Mode is: ", mode_cal)
 print("(c) MidRange is: ", midRange)
 print("(d) Q1 is:",first_quartile)
 print("(d) Q3 is:", upper_quartile)
-#quantiles
 
+print("--------boxplot-----------")
 #(f) boxplot
 plt.boxplot(data_age)
 plt.show()
+print("--------------------")
+
+#five number summery
+print("Five number summery:")
+print("1.",min_number)
+print("2.",first_quartile)
+print("3.",median_cal)
+print("4.",upper_quartile)
+print("5.",max_number)
+print("--------------------")
